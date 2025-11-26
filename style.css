@@ -13,7 +13,7 @@ body {
 
 
 #cabecalho {
-    background: rgba(60, 152, 194, 0.1);
+    background: rgba(81, 161, 199, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
@@ -181,6 +181,15 @@ body {
     font-size: 45px;
     color: aliceblue;
     text-align: center;
+
+}
+
+.projects-cards a {
+    text-decoration: none;
+}
+
+.projects-cards a:visited {
+    color: aliceblue;
 
 }
 
