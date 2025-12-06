@@ -58,18 +58,94 @@ body {
     width: 100%;
 }
 
+.fundos {
+    min-width: 100%;
+    position: absolute;
+    z-index: -3;
+    opacity: 0.1;
+    overflow: hidden;
+}
 
+.fund-port1 img {
+    position: relative;
+    top: 5rem;
+    left: 10rem;
+    width: 11rem;
+    height: 10rem;
+    rotate: 20deg;
+    z-index: -1;
+
+}
+
+.fund-port2 img {
+    position: absolute;
+    top: 48rem;
+    left: 70rem;
+    width: 11rem;
+    height: 12rem;
+    rotate: -30deg;
+    z-index: -1;
+
+}
+
+.fund-port3 img {
+    position: relative;
+    top: 1rem;
+    left: 70rem;
+    width: 11rem;
+    height: 12rem;
+    rotate: -30deg;
+    z-index: -1;
+}
+
+.fund-port01 img {
+    position: relative;
+    top: 6rem;
+    left: 90rem;
+    width: 11rem;
+    height: 10rem;
+    rotate: 20deg;
+    z-index: -1;
+
+}
+
+.fund-port02 img {
+    position: relative;
+    top: -25rem;
+    left: 100rem;
+    width: 11rem;
+    height: 10rem;
+    rotate: 15deg;
+    z-index: -1;
+
+}
+
+.fund-port03 img {
+    position: relative;
+    top: -5rem;
+    left: 10rem;
+    width: 11rem;
+    height: 10rem;
+    rotate: 20deg;
+    z-index: -1;
+
+}
 
 #inicio {
+
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 
 }
 
 #inicio h1 {
+
     margin-top: 20px;
     color: rgb(228, 95, 183);
     font-size: 30px;
@@ -81,6 +157,7 @@ body {
 }
 
 #inicio p {
+
     color: aliceblue;
     font-size: 20px;
 
@@ -91,6 +168,7 @@ body {
 }
 
 .container {
+
     position: relative;
     width: 380px;
     height: 380px;
