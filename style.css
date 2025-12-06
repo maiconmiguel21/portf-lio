@@ -59,6 +59,7 @@ body {
 }
 
 .fundos {
+    min-height: 100%;
     min-width: 100%;
     position: absolute;
     z-index: -3;
@@ -69,7 +70,7 @@ body {
 .fund-port1 img {
     position: relative;
     top: 5rem;
-    left: 10rem;
+    left: 30rem;
     width: 11rem;
     height: 10rem;
     rotate: 20deg;
@@ -79,8 +80,8 @@ body {
 
 .fund-port2 img {
     position: absolute;
-    top: 48rem;
-    left: 70rem;
+    top: 68rem;
+    left: 90rem;
     width: 11rem;
     height: 12rem;
     rotate: -30deg;
@@ -91,7 +92,7 @@ body {
 .fund-port3 img {
     position: relative;
     top: 1rem;
-    left: 70rem;
+    left: 60rem;
     width: 11rem;
     height: 12rem;
     rotate: -30deg;
@@ -101,7 +102,7 @@ body {
 .fund-port01 img {
     position: relative;
     top: 6rem;
-    left: 90rem;
+    left: 120rem;
     width: 11rem;
     height: 10rem;
     rotate: 20deg;
@@ -112,7 +113,7 @@ body {
 .fund-port02 img {
     position: relative;
     top: -25rem;
-    left: 100rem;
+    left: 150rem;
     width: 11rem;
     height: 10rem;
     rotate: 15deg;
@@ -122,8 +123,41 @@ body {
 
 .fund-port03 img {
     position: relative;
-    top: -5rem;
+    top: 1rem;
     left: 10rem;
+    width: 11rem;
+    height: 10rem;
+    rotate: 20deg;
+    z-index: -1;
+
+}
+
+.fund-port001 img {
+    position: relative;
+    top: 1rem;
+    left: 50rem;
+    width: 11rem;
+    height: 10rem;
+    rotate: 20deg;
+    z-index: -1;
+
+}
+
+.fund-port002 img {
+    position: relative;
+    top: 6rem;
+    left: 140rem;
+    width: 11rem;
+    height: 10rem;
+    rotate: 20deg;
+    z-index: -1;
+
+}
+
+.fund-port003 img {
+    position: relative;
+    top: 6rem;
+    left: 30rem;
     width: 11rem;
     height: 10rem;
     rotate: 20deg;
