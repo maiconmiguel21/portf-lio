@@ -56,7 +56,7 @@ body {
 #cabecalho #menu {
     margin-top: 2rem;
     width: 100%;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ body {
 
     list-style: none;
     gap: 9rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #menu li a {
@@ -264,59 +264,72 @@ body {
     text-align: center;
 }
 
-.projects-cards a {
+.box-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all .4s ease;
+    cursor: pointer;
+
+
+}
+
+.card a {
     text-decoration: none;
 }
 
-.projects-cards a:visited {
-    color: aliceblue;
-
-}
-
-.projects-cards {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
-
-}
-
-
-
-.card {
-    width: 30rem;
-    height: 400px;
-    color: aliceblue;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    background: rgba(61, 84, 255, 0.055);
-    overflow: hidden;
-    border: solid rgb(73, 73, 73) 1px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-
-}
-
 .card:hover {
-    box-shadow: 0 10px 20px rgba(77, 2, 252, 0.404);
-    transform: translateY(-10px) scale(1.03);
-
+    transform: translateY(-10px) scale(1.05);
+    transition: .5s;
 }
 
-.card img {
+.img-card img {
     width: 100%;
-    height: 250px;
-}
-
-.card h2 {
-    padding: 20px 20px 0 20px;
-    font-size: 30px;
+    height: 200px;
+    object-fit: cover;
 
 }
 
-.card p {
-    padding: 15px;
-    font-size: 18px;
+.text-card {
+    padding: 1rem;
+
 }
+
+
+
+.text-card h2 {
+    color: aliceblue;
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
+    margin-bottom: 10px;
+}
+
+.text-card p {
+    color: rgb(220, 220, 220);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+
 
 #contatos h1 {
     color: aliceblue;
