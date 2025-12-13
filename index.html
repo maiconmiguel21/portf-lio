@@ -45,12 +45,24 @@
 
     <header id="cabecalho">
 
+        <!-- menu para desktop -->
+        <nav id="menu-desk">
+            <ul>
+                <li> <a href="#inicio">INÍCIO</a></li>
+                <li> <a href="#sobre"> SOBRE </a></li>
+                <li> <a href="#projetos"> PROJETOS </a></li>
+                <li> <a href="#contatos-desk"> CONTATO </a></li>
+            </ul>
+        </nav>
+
+        <!-- menu hamburguer para mobile -->
+        <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
         <nav id="menu">
             <ul>
                 <li> <a href="#inicio">INÍCIO</a></li>
                 <li> <a href="#sobre"> SOBRE </a></li>
                 <li> <a href="#projetos"> PROJETOS </a></li>
-                <li> <a href="#contatos"> CONTATO </a></li>
+                <li> <a href="#contatos-mob"> CONTATO </a></li>
             </ul>
         </nav>
 
@@ -93,15 +105,18 @@
 
         <h1>SOBRE</h1>
 
-        <H2>Oi! Eu sou estudante de ADS (Análise e Desenvolvimento de Sistemas) e estou mergulhando no mundo do
-            desenvolvimento web front-end. Curto transformar ideias em interfaces bonitas e funcionais, explorando
-            HTML,
-            CSS e JavaScript. Esse portfólio é o espaço onde compartilho minha evolução, projetos e experimentos
-            enquanto aprendo e crio coisas novas.</H2>
+        <div class="text-sobre">
+            <p>Oi! Eu sou estudante de ADS (Análise e Desenvolvimento de Sistemas) e estou mergulhando no mundo do
+                desenvolvimento web front-end. Curto transformar ideias em interfaces bonitas e funcionais, explorando
+                HTML,
+                CSS e JavaScript. Esse portfólio é o espaço onde compartilho minha evolução, projetos e experimentos
+                enquanto aprendo e crio coisas novas.</p>
+        </div>
 
 
-        <h1> EXPERIÊNCIAS</h1>
-
+        <div class="experiencia">
+            <h1> EXPERIÊNCIAS</h1>
+        </div>
     </section>
 
     <section id="projetos">
@@ -124,6 +139,7 @@
                     </div>
                 </a>
             </div>
+
             <div class="card">
 
                 <a href="/" target="_blank">
@@ -153,7 +169,7 @@
     </section>
 
 
-    <section id="contatos">
+    <section id="contatos-desk">
 
         <h2>Entre em Contato</h2>
 
@@ -196,7 +212,65 @@
     </section>
 
 
+
+    <!-- contatos mobile -->
+
+    <div id="contatos-mob">
+
+
+        <h1>Entre em Contato</h1>
+
+
+        <ul id="for-mob">
+            <a href="https://instagram.com/maicon_miguel21" target="_blank">
+                <li>
+                    <span class="icon"><i class="bi bi-instagram"></i></span>
+                </li>
+            </a>
+
+            <a href="mailto:andersinhotemiguel@gmail.com">
+                <li>
+                    <span class="icon"><i class="bi bi-envelope"></i></i></span>
+                </li>
+
+            </a><a href="https://wa.me/+5521981272651">
+                <li>
+                    <span class="icon"><i class="bi bi-whatsapp"></i></i></span>
+                </li>
+
+            </a><a href="https://www.linkedin.com/in/anderson-miguel-6a280323a/" target="_blank">
+                <li>
+                    <span class="icon"><i class="bi bi-linkedin"></i></span>
+                </li>
+            </a>
+
+            </a><a href="https://github.com/maiconmiguel21" target="_blank">
+                <li>
+                    <span class="icon"><i class="bi bi-github"></i></span>
+                </li>
+            </a>
+
+        </ul>
+
+    </div>
+
+
     <a href="card.html"> aqui</a>
+
+
+
+    <script>
+        function clickMenu() {
+
+            var menu = document.getElementById("menu")
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            }
+            else { menu.style.display = 'block' }
+        }
+    </script>
+
+
 </body>
 
 </html>
